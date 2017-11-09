@@ -11,6 +11,10 @@ public class BubbleSort {
   public BubbleSort() { }
 
   public static int[] sort(int[] list) {
+    if(list == null || list.length <= 0) {
+      return list;
+    }
+
     boolean sorted = false;
 
     while(!sorted) {

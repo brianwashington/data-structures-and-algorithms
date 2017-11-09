@@ -8,6 +8,10 @@ package sorting;
  */
 public class InsertionSort {
   public static int[] sort(int[] list) {
+    if(list == null || list.length <= 1) {
+      return list;
+    }
+
     for(int i=1; i<list.length; i++) {
       int j = i;
       int current = list[i];
