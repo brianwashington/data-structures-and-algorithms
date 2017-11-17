@@ -18,8 +18,7 @@ public class QuickSortTest {
     int[] sortedList = { 4, 21, 26, 30, 32, 53, 63, 68, 96, 100 };
 
     QuickSort quickSort = new QuickSort();
-    int[] l = { 2, 1 };
-    quickSort.sort(l);
+    quickSort.sort(list);
 
     Assert.assertArrayEquals(list, sortedList);
   }
