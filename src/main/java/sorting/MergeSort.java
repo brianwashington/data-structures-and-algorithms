@@ -4,6 +4,7 @@ package sorting;
  * Created by bino on 11/8/17.
  * Merge sort is a divide and conquer algorithm that takes a list of elements and recursively cuts the list in half
  * until the list contains only one element. It then merges this list with the remaining list to build up a sorted list.
+ * The best-case and average runtime are O(n log n) and the space complexity is O(n).
  */
 public class MergeSort {
   public int[] helper;
