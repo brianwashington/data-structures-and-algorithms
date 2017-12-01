@@ -27,7 +27,7 @@ public class MergeSort {
 
   public void merge(int[] list, int start, int mid, int end) {
     for(int i=start; i<=end; i++) {
-      helper[i] = list[i];
+      this.helper[i] = list[i];
     }
 
     int i = start;
@@ -35,18 +35,18 @@ public class MergeSort {
     int k = start;
 
     while(i <= mid && j <= end) {
-      if(helper[i] <= helper[j]) {
-        list[k] = helper[i];
+      if(this.helper[i] < this.helper[j]) {
+        list[k] = this.helper[i];
         i++;
       } else {
-        list[k] = helper[j];
+        list[k] = this.helper[j];
         j++;
       }
       k++;
     }
 
     while(i <= mid) {
-      list[k] = helper[i];
+      list[k] = this.helper[i];
       k++;
       i++;
     }

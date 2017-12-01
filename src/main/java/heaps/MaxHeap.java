@@ -28,10 +28,7 @@ public class MaxHeap {
     int rightNode = (2*index) + 2;
 
     int largest = leftNode <= this.heapSize && list[leftNode] > list[index] ? leftNode : index;
-
-    if (rightNode <= this.heapSize && list[rightNode] > list[largest]) {
-      largest = rightNode;
-    }
+    largest = rightNode <= this.heapSize && list[rightNode] > list[largest] ? rightNode : largest;
 
     if (largest != index) {
       int temp = list[index];

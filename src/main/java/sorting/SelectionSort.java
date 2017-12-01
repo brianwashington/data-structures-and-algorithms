@@ -15,18 +15,17 @@ public class SelectionSort {
     }
 
     for(int i=0; i < list.length; i++) {
-      int minVal = list[i];
       int minPos = i;
 
       for(int j = i+1; j < list.length; j++) {
-         if(list[j] < minVal) {
-           minVal = list[j];
+         if(list[j] < list[minPos]) {
            minPos = j;
          }
       }
 
-      list[minPos] = list[i];
-      list[i] = minVal;
+      int temp = list[i];
+      list[i] = list[minPos];
+      list[minPos] = temp;
     }
 
     return list;

@@ -16,7 +16,8 @@ public class BubbleSortTest {
     int[] list = { 96, 4, 100, 53, 32, 63, 26, 68, 21, 30 };
     int[] sortedList = { 4, 21, 26, 30, 32, 53, 63, 68, 96, 100 };
 
-    BubbleSort.sort(list);
+//    BubbleSort.sort(list);
+    practice.BubbleSort.sort(list);
     Assert.assertArrayEquals(list, sortedList);
   }
 }

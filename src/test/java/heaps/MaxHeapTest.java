@@ -15,8 +15,10 @@ public class MaxHeapTest {
     int[] list = { 4, 1, 3, 2, 16, 9, 10, 14, 8, 7 };
     int[] maxHeapifiedList = { 16, 14, 10, 8, 7, 9, 3, 2, 4, 1 };
 
-    MaxHeap maxHeap = new MaxHeap();
-    maxHeap.buildHeap(list);
+//    MaxHeap maxHeap = new MaxHeap();
+//    maxHeap.buildHeap(list);
+    practice.MaxHeap mh = new practice.MaxHeap();
+    mh.buildHeap(list);
 
     Assert.assertArrayEquals(list, maxHeapifiedList);
   }
@@ -26,8 +28,11 @@ public class MaxHeapTest {
     int[] list = { 4, 1, 3, 2, 16, 9, 10, 14, 8, 7 };
     int[] sortedList = { 1, 2, 3, 4, 7, 8, 9, 10, 14, 16 };
 
-    MaxHeap maxHeap = new MaxHeap();
-    maxHeap.sort(list);
+//    MaxHeap maxHeap = new MaxHeap();
+//    maxHeap.sort(list);
+
+    practice.MaxHeap mh = new practice.MaxHeap();
+    mh.sort(list);
 
     Assert.assertArrayEquals(list, sortedList);
   }
